@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LoginRegister.master.cs" Inherits="MySavingsApp.LoginRegister" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <form id="form1" runat="server">
+    
+        <table class="table">
+            <tr>
+                <td colspan="2" style="background-color:aquamarine">
+                    <h1>My Savings App</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <nav class="align-content-sm-center navbar-light bg-light">
+                            <a class="navbar-brand" href="Login.aspx">Login</a>
+                            <a class="navbar-brand" href="Register.aspx">Register</a>
+                            <a class="navbar-brand" href="About.aspx">About</a>
+                            <a class="navbar-brand" href="ContactUs.aspx">Contact Us!</a>
+                        </nav>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                        <div>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            
+                            </asp:ContentPlaceHolder>
+                        </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <b>MySavingsApp(TM)</b>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

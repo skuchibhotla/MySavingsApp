@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 14 for Web
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySavingsApp", "MySavingsApp\MySavingsApp.csproj", "{7F998556-BA60-4EBC-B7CB-4A896999E08A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97EF212E-6EC4-4D41-B750-48E26E9B3AE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F998556-BA60-4EBC-B7CB-4A896999E08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F998556-BA60-4EBC-B7CB-4A896999E08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F998556-BA60-4EBC-B7CB-4A896999E08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F998556-BA60-4EBC-B7CB-4A896999E08A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

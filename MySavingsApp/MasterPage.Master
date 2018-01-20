@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="MySavingsApp.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>
+
+    <script type="text/javascript" src="/bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.standalone.css" />
+    <script type="text/javascript" src="Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="StyleSheetMain.css" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+        <script type="text/javascript">
+    $(document).ready(function () {            
+        $("#FromDate").datepicker({
+            autoclose: true,
+            format: 'mm-dd-yyyy',
+            todayHighlight: true,
+            clearBtn: true,
+            orientation: 'bottom'
+        });
+    });
+</script>
+    <script type="text/javascript">
+    $(document).ready(function () {            
+        $("#ToDate").datepicker({
+            autoclose: true,
+            format: 'mm-dd-yyyy',
+            todayHighlight: true,
+            clearBtn: true,
+            orientation: 'bottom'
+        });
+    });
+        </script>
+
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    
+        <table class="table">
+            <tr>
+                <td colspan="2" style="background-color:aquamarine">
+                    <h1>My Savings App</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <nav class="align-content-sm-center navbar-light bg-warning">
+                            <a class="navbar-brand" href="TrackSavings.aspx">Track Savings</a>
+                            <a class="navbar-brand" href="InterestCalculator.aspx">Interest Calculator</a>
+                            <%--<a class="navbar-brand" onclick="Logout();" href="javascript:void(0);">Logout</a>--%>
+                        </nav>
+                    </div>
+                     
+                  <%--  <script type="text/javascript">
+                        function Logout() {
+                            $("#btnLogout").click();
+                        }
+                    </script>--%>
+                </td>
+                <td>
+                 
+                        <asp:Button ID="ButtonLogout" OnClick="ButtonLogout_Click" runat="server" CssClass="navbar-btn" CausesValidation="false" Text="Logout"/>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                        <div >
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            
+                            </asp:ContentPlaceHolder>
+                        </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-left:20px">
+                    <b>MySavingsApp(TM)</b>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
